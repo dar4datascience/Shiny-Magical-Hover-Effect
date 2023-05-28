@@ -1,0 +1,64 @@
+---
+title: "Demo Rmarkdown Hover"
+author: "Daniel Amieva"
+date: "2023-05-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Install required packages
+# install.packages("ggplot2")
+# install.packages("charlatan")
+
+# Load required libraries
+library(ggplot2)
+library(charlatan)
+library(gridExtra)
+# Set the seed for reproducibility
+set.seed(123)
+
+# Generate fake data using charlatan
+fake_data <- data.frame(
+  x = rnorm(100, mean = 0, sd = 1),
+  y = rnorm(100, mean = 0, sd = 1)
+)
+
+# Plot 1
+plot1 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_point() +
+  labs(title = "Plot 1")
+
+# Plot 2
+plot2 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_line() +
+  labs(title = "Plot 2")
+
+# Plot 3
+plot3 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Plot 3")
+
+# Plot 4
+plot4 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_boxplot() +
+  labs(title = "Plot 4")
+
+# Plot 5
+plot5 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_density_2d() +
+  labs(title = "Plot 5")
+
+# Plot 6
+plot6 <- ggplot(fake_data, aes(x = x)) +
+  geom_histogram() + 
+  labs(title = "Plot 6")
+```
+
+```{r}
+# Arrange and display the plots
+grid.arrange(plot1, plot2, plot3, plot4, plot5, plot6, ncol = 2)
+
+```
+
+

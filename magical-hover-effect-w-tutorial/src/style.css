@@ -4,20 +4,22 @@
 }
 
 body {
-  align-items: center;
   background-color: var(--bg-color);
   display: flex;
-  height: 100vh;
-  justify-content: center;
-  margin: 0px;
-  overflow: hidden;
-  padding: 0px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
+
 
 #cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;  
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   max-width: 916px;
   width: calc(100% - 20px);
 }
@@ -245,3 +247,37 @@ i {
 .link > span {
   color: white;
 }
+
+
+/* CSS styles for the navigation bar */
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.navbar .logo {
+  margin-right: 16px;
+}
+
+.navbar .logo img {
+  height: auto;
+  width: 40px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+}
+
