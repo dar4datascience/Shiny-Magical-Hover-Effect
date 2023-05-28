@@ -1,12 +1,19 @@
 ---
-title: "Demo Rmarkdown Hover"
+title: "Demo Rmarkdown Hover and Flip Card Effect"
 author: "Daniel Amieva"
 date: "2023-05-28"
-output: html_document
+output:
+  html_document:
+    template: "index.html"
+    css: "style.css"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
 # Install required packages
 # install.packages("ggplot2")
 # install.packages("charlatan")
@@ -60,5 +67,3 @@ plot6 <- ggplot(fake_data, aes(x = x)) +
 grid.arrange(plot1, plot2, plot3, plot4, plot5, plot6, ncol = 2)
 
 ```
-
-

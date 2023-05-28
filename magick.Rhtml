@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>$title$</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+
+<body>
+
+
+	<label>
+		<input type="checkbox" />
+		<div class="flip-card">
+			<div class="front">
+
+				<i class="fa-duotone fa-otter"></i>
+				<h3>Otters</h3>
+				<h4>Look at me, imma cute lil fella.</h4>
+				<div class='myrmarkdown-content'>
+    <!--begin.rcode setup, include=FALSE
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+# Install required packages
+# install.packages("ggplot2")
+# install.packages("charlatan")
+
+# Load required libraries
+library(ggplot2)
+library(charlatan)
+library(gridExtra)
+# Set the seed for reproducibility
+set.seed(123)
+
+# Generate fake data using charlatan
+fake_data <- data.frame(
+  x = rnorm(100, mean = 0, sd = 1),
+  y = rnorm(100, mean = 0, sd = 1)
+)
+
+# Plot 1
+plot1 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_point() +
+  labs(title = "Plot 1")
+
+# Plot 2
+plot2 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_line() +
+  labs(title = "Plot 2")
+
+# Plot 3
+plot3 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Plot 3")
+
+# Plot 4
+plot4 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_boxplot() +
+  labs(title = "Plot 4")
+
+# Plot 5
+plot5 <- ggplot(fake_data, aes(x = x, y = y)) +
+  geom_density_2d() +
+  labs(title = "Plot 5")
+
+# Plot 6
+plot6 <- ggplot(fake_data, aes(x = x)) +
+  geom_histogram() + 
+  labs(title = "Plot 6")
+end.rcode-->
+    
+    <!--begin.rcode cars-scatter, fig.align='center'
+grid.arrange(plot1, plot2, plot3, plot4, plot5, plot6, ncol = 2)
+end.rcode-->
+    
+				</div>
+
+				<p>Click to flip</p>
+			</div>
+			<div class="back">
+				<h1>About me</h1>
+				<i class="fa-duotone fa-otter"></i>
+				<hr />
+				<p>Let's ask R what is
+  the value of &pi;? Of course it is <!--rinline pi --></p>
+				<hr />
+				<p class="click">Click to flip</p>
+			</div>
+		</div>
+	</label>
+	<script>
+		const script = document.createElement("script");
+
+		script.src = "https://kit.fontawesome.com/1ee8f271b9.js";
+
+		document.body.appendChild(script);
+
+
+
+
+
+	</script>
+	<script src="./script.js"></script>
+
+</body>
+
+</html>
