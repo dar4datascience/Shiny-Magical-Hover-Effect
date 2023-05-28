@@ -2,6 +2,68 @@
 <html lang="en-US">
 
 <head>
+<style type="text/css">
+.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+}
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>$title$</title>
@@ -20,7 +82,10 @@
 				<h3>Otters</h3>
 				<h4>Look at me, imma cute lil fella.</h4>
 				<div class='myrmarkdown-content'>
-				    $body$
+    
+    
+<div class="chunk" id="cars-scatter"><div class="rimage center"><img src="figure/cars-scatter-1.png" alt="plot of chunk cars-scatter" class="plot" /></div></div>
+    
 				</div>
 
 				<p>Click to flip</p>
@@ -29,8 +94,8 @@
 				<h1>About me</h1>
 				<i class="fa-duotone fa-otter"></i>
 				<hr />
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-					industry's standard dummy text ever since forever.</p>
+				<p>Let's ask R what is
+  the value of &pi;? Of course it is <code class="knitr inline">3.1415927</code></p>
 				<hr />
 				<p class="click">Click to flip</p>
 			</div>
