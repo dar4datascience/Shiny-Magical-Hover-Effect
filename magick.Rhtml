@@ -26,13 +26,11 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE
 )
-# Install required packages
-# install.packages("ggplot2")
-# install.packages("charlatan")
 
 # Load required libraries
+library(downloadthis)
 library(ggplot2)
-library(charlatan)
+library(dplyr)
 library(gridExtra)
 # Set the seed for reproducibility
 set.seed(123)
@@ -93,6 +91,24 @@ end.rcode-->
 			</div>
 		</div>
 	</label>
+	
+	<a id="source-link" class="link" href="https://fmmattioni.github.io/downloadthis/articles/button_types.html" target="_blank">
+  <i class="fa-solid fa-link"></i>
+  How 2 add download button to static files?
+  </a>
+      <!--begin.rcode downloadbutton
+mtcars %>%
+  download_this(
+    output_name = "mtcars dataset",
+    output_extension = ".csv",
+    button_label = "Download data as csv",
+    button_type = "success",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+end.rcode-->
+
+	
 	<script>
 		const script = document.createElement("script");
 

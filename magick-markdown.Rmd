@@ -16,11 +16,11 @@ knitr::opts_chunk$set(
 )
 # Install required packages
 # install.packages("ggplot2")
-# install.packages("charlatan")
+# install.packages("charlatan") 
 
 # Load required libraries
 library(ggplot2)
-library(charlatan)
+library(downloadthis)
 library(gridExtra)
 # Set the seed for reproducibility
 set.seed(123)
