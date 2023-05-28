@@ -4,7 +4,7 @@ author: "Daniel Amieva"
 date: "2023-05-28"
 output:
   html_document:
-    template: "index.html"
+    template: "template.html"
     css: "style.css"
 ---
 
